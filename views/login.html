@@ -122,16 +122,17 @@ span.psw {
 </style>
 <body>
 
-<h2>StockApp Login </h2>
+<h2> Login and Register </h2>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
 
 <div id="id01" class="modal">
 
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
+    <h2>StockApp Login </h2>
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -162,12 +163,15 @@ window.onclick = function(event) {
 }
 </script>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
 
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+<div id="id02" class="modal">
+
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
   <form class="modal-content animate" action="/action_page.php">
+  <div class="imgcontainer">
     <div class="container">
+    <h2>StockApp Register </h2>
       <label><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required>
 
@@ -176,7 +180,7 @@ window.onclick = function(event) {
 
 
       <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
         <button type="submit" class="signupbtn">Sign Up</button>
       </div>
     </div>
@@ -185,7 +189,7 @@ window.onclick = function(event) {
 
 <script>
 // Get the modal
-var modal = document.getElementById('id01');
+var modal = document.getElementById('id02');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
