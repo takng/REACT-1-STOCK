@@ -1,0 +1,88 @@
+@import '../modules/variables';
+
+.watch-btn{
+    display: none;
+    @media #{$mq-xs, $mq-sm}{
+      margin: 0 auto;
+      width:90%;
+      display:block;
+      background-color:#264C87;
+      color:white;
+      font-weight:bold;
+    }
+  }
+
+.searchBar {
+    width: 100%;
+    margin-top:50px;
+
+    @media #{$mq-xs, $mq-sm}{
+    // margin-top:50px;
+    }
+}
+
+.symbolList {
+  @media #{$mq-xs, $mq-sm}{
+      width: 90% ;
+      span a {
+        font-size:14px !important;
+        text-align: center !important;
+          &:hover{
+            background: $hoverGreen;
+          }
+      }
+    }
+    margin-top: 4px;
+    background-color: $moneyGreen;
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+    a {
+      display: block;
+      padding-left:50px;
+      line-height: 30px;
+      color: white;
+      text-decoration: none;
+    }
+   .delBtn {
+      width:100%;
+      color:red;
+      opacity:.5 !important;
+      text-align:center;
+      padding-left:0px;
+      &:hover{
+        background: $hoverGreen;
+        opacity:1 !important;
+        cursor: pointer;
+      }
+    }
+    span {
+      display:inline-block;
+    }
+    span.left {
+      width:80%;
+      &:hover {
+      background: $hoverGreen;
+      color: white;
+      cursor: pointer;
+     }
+    }
+    span.right {
+      width:20%;
+      text-align:left;
+    }
+    span a {
+      width:100%;
+      font-size:16px;
+    }
+}
+
+.watchListEmpty {
+    text-align: center;
+    background-color: white  !important;
+    color: black !important;
+}

@@ -1,0 +1,94 @@
+@import '../modules/variables';
+
+.userName{
+    font-size:15px;
+    font-weight:700;
+    color:black;
+    &:hover{
+      cursor: pointer;
+   }
+}
+
+.mentionedUser {
+   font-size:14px;
+   font-weight:600;
+}
+.message-container{
+    @media #{$mq-xs, $mq-sm}{
+      width:90%;
+      margin-top:10px;
+      margin: 0 auto;
+      min-height: 0;
+      // max-height: 300px;
+      overflow: auto;
+    }
+    .seeMoreMsg {
+        display:none;
+        text-align:right !important;
+        color:red;
+        float:right;
+    }
+
+    margin-top:50px;
+}
+
+.message-container-inside{
+  @media #{$mq-xs, $mq-sm}{
+    height:100%;
+  }
+  height:85vh;
+  overflow:auto
+}
+
+.messageDetailContainer {
+    word-wrap: break-word;
+    height:auto;
+    border-top: 0.1px $lightGrey solid;
+    border-bottom: 0.1px $lightGrey solid;
+    @media #{$mq-xs, $mq-sm, $mq-m}{
+      width:100%;
+    }
+
+  &:hover{
+    background-color: $lightGrey;
+  }
+  img {
+    float:left;
+    margin-right:10px;
+    border-radius:10px;
+  }
+}
+
+.timeStamp {
+    color:#565678;
+    font-size:12px;
+    font-weight:bold;
+    text-align:right;
+    padding:0;
+}
+
+.viaSource {
+    float:right;
+    color:#101621;
+    font-size:11px;
+    font-weight:bold;
+    padding-top:5px;
+    // text-align:left;
+}
+
+.dollarSymbol {
+    margin-top:-52px;
+    font-weight:bold;
+    color: black;
+}
+
+.bullish {
+    font-weight:bold;
+    color: #21E120;
+
+}
+
+.bearish {
+    font-weight:bold;
+    color:#F5002D;
+}

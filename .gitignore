@@ -1,0 +1,16 @@
+## Dependency directorys
+node_modules
+bower_components
+npm-debug.log
+*.log
+
+## Bundle files
+client/public/bundle.js
+client/public
+bundle.js
+.css
+
+## OSX
+.DS_Store
+.Spotlight-V100
+.Trashes
